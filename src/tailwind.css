@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-link{
-    @apply text-black bg-white px-5  py-2 rounded-full
+
+html{
+    cursor: url('../imgs/crusor.png'),auto;
 }
+.nav-link{
+    @apply uppercase px-5  py-2 mx-2 rounded-full text-lg font-medium  transition duration-500 ease-in-out;
+}
+.nav-link a{
+    cursor: url('../imgs/crusor.png'),auto;
+}
+
+
+.myHeader.absolute {
+    z-index: 99;
+    mask-image: url('../imgs/mask.svg');
+    background-color: black;
+    /* mask-size: 100px; */
+    /* mask-position: 30px 60px; */
+    mask-repeat: no-repeat;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke: 1px #000;
+    /* transform: translate(-100px ,-100px); */
+    
+}
+.myHeader.absolute:hover #crusor{
+    width: 100px !important;
+} 

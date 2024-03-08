@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/all.min.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-       
-    <header>
-        <!-- navbar -->
-        <nav class="bg-black w-1/4 rounded-full mx-auto mt-16 py-4 px-4">
-            <ul class="flex justify-between">
-                <li class="nav-link">
-                    <a href="" >Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="" class="">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="" class="">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="" class="">Home</a>
-                </li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="pt-16">
+      <!-- navbar -->
+      <nav class="bg-black max-w-fit rounded-full mx-auto py-2">
+        <ul class="flex justify-between">
+          <li class="nav-link text-black bg-white">
+            <a href="">Home</a>
+          </li>
+          <li class="nav-link hover:text-black text-white hover:bg-white">
+            <a href="#" class="">about</a>
+          </li>
+          <li class="nav-link hover:text-black text-white hover:bg-white">
+            <a href="#" class="">projects</a>
+          </li>
+          <li class="nav-link hover:text-black text-white hover:bg-white">
+            <a href="#" class="">contact</a>
+          </li>
+        </ul>
+      </nav>
 
-
-        <!-- headLine -->
-        <div class="flex justify-center">
-            <div>
-                
+      <!-- headLine -->
+      <div class="relative w-fit transform -translate-x-1/2 left-1/2 ">
+        <div class="myHeader   sm:text-2xl">
+          <div class="flex flex-col font-extrabold">
+            <span class="lg:text-headLine lg:leading-normal text-9xl">
+              FRONT-END
+            </span>
+            <div class="flex items-center ">
+              <span class="lg:text-secondryLine lg:leading-normal text-6xl rounded-lg px-3 uppercase">
+                Developer
+              </span>
+              <span class="bg-yellow-400 px-6 py-4 mx-3 rounded-full font-bold">
+                Scroll Down 
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
             </div>
+          </div>
         </div>
+        <div id="my_mask" class="myHeader absolute top-0 left-0 flex justify-center sm:text-2xl">
+          <div class="flex flex-col font-extrabold">
+            <span class="lg:text-headLine lg:leading-normal text-9xl">
+              FRONT-END
+            </span>
+            <div class="flex items-center justify-between">
+              <span class="lg:text-secondryLine lg:leading-normal text-6xl rounded-lg px-3 uppercase">
+                Developer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div
+        id="crusor"
+        class="fixed w-10 h-10 rounded-full border-2 border-black transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      </div>
     </header>
-</body>
+
+    <script src="../src/js/script.js"></script>
+  </body>
 </html>

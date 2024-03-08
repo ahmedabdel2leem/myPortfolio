@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontSize:{
-        headLine:'15rem',
-        secondryLine:'13rem'
+        headLine:'10rem',
+        secondryLine:'9rem'
       }
     },
   },
